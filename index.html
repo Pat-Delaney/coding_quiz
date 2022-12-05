@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel ="stylesheet" href="./assets/css/normalize.css">
+    <link  rel ="stylesheet" href="./assets/css/style.css">
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <header>
+        <button class="high_scores">High Scores</button>
+        <h1 id="title">Coding quiz</h1>
+        <div id="timer"></div>
+    </header>
+    <main>
+        <div id="start_screen" class="visible">
+        <p>
+            Try to answer these coding related questions within the time limit. Each wrong answer takes away time!
+        </p>
+        <button id="start">Start</button>
+        </div>
+        <div id="q1" class="hidden">
+            <h2>Commonly used data types do NOT include:</h2>
+            <button class="answer wrong">1. Booleans</button>
+            <button class="answer wrong">2. Strings</button>
+            <button class="answer right">3. Alerts</button>
+            <button class="answer wrong">4. Arrays</button>
+        </div>
+        <div id="q2" class="hidden">
+            <h2>The condition in an if/else statement is contained in:</h2>
+            <button class="answer wrong">1. Curly Brackets</button>
+            <button class="answer right">2. Parentheses</button>
+            <button class="answer wrong">3. Square Brackets</button>
+            <button class="answer wrong">4. Quotes</button>
+        </div>
+        <div id="q3" class="hidden">
+            <h2>Arrays in Javascript can be used to store:</h2>
+            <button class="answer wrong">1. Numbers and Strings</button>
+            <button class="answer wrong">2. Other Arrays</button>
+            <button class="answer wrong">3. Booleans</button>
+            <button class="answer right">4. All of the above</button>
+        </div>
+        <div id="q4" class="hidden">
+            <h2>What are the three pillars of front end development:</h2>
+            <button class="answer right">1. HTML, Javascript and CSS</button>
+            <button class="answer wrong">2. .com, .org and .net</button>
+            <button class="answer wrong">3. Websites, Apps and webpages</button>
+            <button class="answer wrong">4. Java, C++ and C#</button>
+        </div>
+        <div id="q5" class="hidden">
+            <h2>The main use of CSS is to:</h2>
+            <button class="answer wrong">1. Create the body of a website</button>
+            <button class="answer wrong">2. Provide the logic of a website</button>
+            <button class="answer right">3. Provide the design, look and format of a website</button>
+            <button class="answer wrong">4. It doesnt have a use</button>
+        </div>
+        <div id="feedback"></div>
+        <div class="hidden" id="game_over">   
+            <h2>Game Over!</h2>
+            <p>Your final score is:</p>
+            <div id="scorecard"></div>
+            <button id="rematch">Retry</button>
+            <button class="high_scores">High Scores</button>
+        </div>
+        <div class="hidden" id="score_screen">
+            <h2>High scores</h2>
+            <div id="score_list">
+            </div>
+            <form id="high_score_form">
+                <input type="text" placeholder="Enter your initals" id="initials">
+                <button id="submit_button">Add Your High Score</button>
+            </form>
+            <button id="clear">Clear High scores</button>
+            <button id="return">Return</button>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
